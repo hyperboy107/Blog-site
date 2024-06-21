@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #292aab !important;
+        }
+
+        .jumbotron {
+            background: url('https://source.unsplash.com/1600x900/?nature') center center/cover no-repeat;
+            color: white
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        /* footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        } */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        .blog-post {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .blog-post h2 {
+            color: #343a40;
+        }
+        .navbar {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: center; /* Center items horizontally */
+        padding: 10px 0;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 0 10px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+        background-color: #555;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bloggi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Down
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="contact.html">Contact</a>
+                        <!-- <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a> -->
+                    <!-- </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav> --> 
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="dark">Welcome to My Blog</h1>
+            <p class="lead">A place to share your thoughts and ideas.</p>
+        </div>
+    </div>
+
+    <!-- Blog Posts -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1679079456083-9f288e224e96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Technology</h5>
+                        <p class="card-text">Welcome to our technology corner, where we delve into the fascinating world
+                            of innovation, gadgets, and digital trends.
+                            In today's fast-paced world, technology plays an increasingly integral role in shaping how
+                            we live, work, and interact
+                            with the world around us.
+
+                            Through this platform, we aim to explore the latest advancements in technology, share
+                            insightful perspectives on
+                            emerging trends, and provide practical tips to help you navigate the digital landscape
+                            effectively.</p>
+                        <a href="https://en.wikipedia.org/wiki/Technology" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1709572443102-11d92d3591ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nature</h5>
+                        <p class="card-text">In the hustle and bustle of modern life, it's easy to lose touch with the
+                            serene beauty that surrounds us – nature.
+                            Amidst the concrete jungles and buzzing technology, there exists a world of breathtaking
+                            landscapes, diverse ecosystems,
+                            and awe-inspiring wonders waiting to be explored.
+
+                            Nature, with its boundless magnificence, offers us a sanctuary for reflection, rejuvenation,
+                            and connection. From the
+                            towering peaks of majestic mountains to the tranquil shores of pristine beaches, each
+                            element of the natural world tells
+                            a story of resilience, harmony, and interconnectedness..</p>
+                        <a href="https://en.wikipedia.org/wiki/Nature" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://t3.ftcdn.net/jpg/04/64/79/96/240_F_464799633_PH0gGBl6NhVCkCecbsx624Zlh9PqQ9OJ.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Metaverse</h5>
+                        <p class="card-text">The metaverse is a collective virtual space comprising interconnected
+                            digital environments, augmented reality, and
+                            virtual reality experiences. It's a concept that transcends traditional online platforms,
+                            offering users immersive and
+                            interactive environments where they can work, play, socialize, and create.
+
+                            A World of Infinite Possibilities
+
+                            Imagine stepping into a virtual world where the boundaries of reality blur, and anything is
+                            possible. In the metaverse,
+                            you can attend virtual concerts, explore fantastical landscapes, attend business meetings in
+                            virtual boardrooms, or even
+                            design and sell digital assets in a virtual marketplace.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <!-- Font Awesome CDN for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>
